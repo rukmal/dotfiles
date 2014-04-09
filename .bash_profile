@@ -13,8 +13,6 @@ export LSCOLORS=GxFxCxDxBxegedabagaced # Color scheme for 'light' terminal theme
 
 # System function aliases
 #------------------------
-alias l="ls"
-alias c="cd"
 alias ll="ls -l"
 alias la="ls -a"
 
