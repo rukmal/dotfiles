@@ -13,7 +13,10 @@ export LSCOLORS=GxFxCxDxBxegedabagaced # Color scheme for 'light' terminal theme
 
 # System function aliases
 #------------------------
-alias ll='ls -l'
+alias l="ls"
+alias c="cd"
+alias ll="ls -l"
+alias la="ls -a"
 
 # Git aliases
 #------------
@@ -23,7 +26,7 @@ alias pull='git pull'
 # Function for git commit and push
 # Usage: gg [files to include](optional) [commit message] [branch to be push to]
 function gp () {
-	if [$3 -ne ""]; then
+	if [$1 -ne ""]; then
 		git add $1;
 	fi
 	git commit -m "$2";
