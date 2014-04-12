@@ -15,6 +15,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced # Color scheme for 'light' terminal theme
 #------------------------
 alias ll="ls -l"
 alias la="ls -a"
+alias p="pwd"
 
 # Git aliases
 #------------
