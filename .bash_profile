@@ -1,4 +1,4 @@
-# Added by install_latest_perl_osx.pl
+# Read from .bashrc
 [ -r /Users/rukmal/.bashrc ] && source /Users/rukmal/.bashrc
 
 # Enabling colors in terminal
