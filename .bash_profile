@@ -1,3 +1,6 @@
+# Change bash prompt
+export PS1="\W @ \h (\u) \$ "
+
 # Read from .bashrc
 [ -r /Users/rukmal/.bashrc ] && source /Users/rukmal/.bashrc
 
