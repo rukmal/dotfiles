@@ -24,11 +24,13 @@ alias p="pwd"
 #------------
 alias push='git push'
 alias pull='git pull'
+alias fetch='git fetch'
 
 # Function for git commit and push
-# Note: Commits ALL files in working directory in the scope of git.
+# Note: Commits ALL files in working directory.
 # Usage: gg [commit message] [branch to be push to]
-function gp () {
-	git commit -am "$1";
+gp () {
+	git add -A
+	git commit -m "$1";
 	git push origin $2;
 }
