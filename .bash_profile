@@ -25,6 +25,7 @@ alias p="pwd"
 alias push='git push'
 alias pull='git pull'
 alias fetch='git fetch'
+alias gis='git status'
 
 # Function for git commit and push
 # Note: Commits ALL files in working directory.
