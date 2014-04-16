@@ -27,11 +27,19 @@ alias pull='git pull'
 alias fetch='git fetch'
 alias gis='git status'
 
-# Function for git commit and push
+# Function for git add, commit and push
 # Note: Commits ALL files in working directory.
-# Usage: gg [commit message] [branch to be push to]
-gp () {
+# Usage: gip [commit message] [branch to be push to]
+gip () {
 	git add -A
 	git commit -m "$1";
 	git push origin $2;
+}
+
+# Function for git add and commit
+# Note: Commits ALL files in working directory.
+# Usage: gic [commit message]
+gic () {
+	git add -A
+	git commit -m "$1"
 }
