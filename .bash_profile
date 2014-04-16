@@ -14,6 +14,11 @@ export LSCOLORS=GxFxCxDxBxegedabagaced # Color scheme for 'light' terminal theme
 # Custom aliases
 #==============
 
+# Mullins lab (work related) aliases
+#----------------------------------
+alias themis='ssh -p 2222 -i ~/.ssh/public_key -t rukmal@zeus.mullins.microbiol.washington.edu ssh themis'
+alias hercules='ssh -p 2222 -i ~/.ssh/public_key -t rukmal@zeus.mullins.microbiol.washington.edu ssh hercules'
+
 # System function aliases
 #------------------------
 alias ll="ls -l"
@@ -22,9 +27,7 @@ alias p="pwd"
 
 # Git aliases
 #------------
-alias push='git push'
-alias pull='git pull'
-alias fetch='git fetch'
+alias gif='git fetch'
 alias gis='git status'
 
 # Function for git add, commit and push
