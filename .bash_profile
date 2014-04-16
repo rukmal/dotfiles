@@ -21,9 +21,13 @@ alias hercules='ssh -p 2222 -i ~/.ssh/public_key -t rukmal@zeus.mullins.microbio
 
 # System function aliases
 #------------------------
-alias ll="ls -l"
-alias la="ls -a"
-alias p="pwd"
+alias ll='ls -l'
+alias la='ls -a'
+alias p='pwd'
+
+# System 'hack' aliases
+#----------------------
+alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 
 # Git aliases
 #------------
