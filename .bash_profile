@@ -1,6 +1,9 @@
 # Change bash prompt
 export PS1="\W @ \h (\u) \$ "
 
+# Adding MacPorts to the path
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
 # Read from .bashrc
 [ -r /Users/rukmal/.bashrc ] && source /Users/rukmal/.bashrc
 
@@ -33,6 +36,7 @@ alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 #------------
 alias gif='git fetch'
 alias gis='git status'
+alias gid='git diff'
 
 # Function for git add, commit and push
 # Note: Commits ALL files in working directory.
