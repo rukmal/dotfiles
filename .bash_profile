@@ -37,6 +37,7 @@ alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 alias gif='git fetch'
 alias gis='git status'
 alias gid='git diff'
+alias gia='git add -A'
 
 # Function for git add, commit and push
 # Note: Commits ALL files in working directory.
