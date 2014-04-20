@@ -29,6 +29,7 @@ alias inthemis='ssh rukmal@themis'
 alias ll='ls -l'
 alias la='ls -a'
 alias p='pwd'
+alias pc='pwd | pbcopy' # Copy current working directory to clipboard
 
 # System 'hack' aliases
 #----------------------
