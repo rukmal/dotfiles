@@ -41,6 +41,7 @@ alias gif='git fetch'
 alias gis='git status'
 alias gid='git diff'
 alias gia='git add -A'
+alias gih='git push heroku master'
 
 # Function for git add, commit and push
 # Note: Commits ALL files in working directory.
