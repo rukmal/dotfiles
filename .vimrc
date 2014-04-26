@@ -35,7 +35,7 @@ nnoremap ; :
 nnoremap Y y$
 au InsertEnter * :set nu
 au InsertLeave * :set rnu
-set rnu
+set nu
 autocmd BufRead,BufNewFile * setlocal nospell
 set viminfo=
 
