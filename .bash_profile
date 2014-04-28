@@ -1,5 +1,5 @@
 # Change bash prompt
-export PS1="\W @ \h (\u) \$ "
+export PS1="\e[0;34m\W @ \h (\u) \$ "
 
 # Adding MacPorts to the path
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
@@ -11,7 +11,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 #===========================
 export CLICOLOR=1
 # Color scheme for 'light' terminal themes
-export LSCOLORS=GxFxCxDxBxegedabagaced # Color scheme for 'light' terminal themes
+# export LSCOLORS=GxFxCxDxBxegedabagaced # Color scheme for 'light' terminal themes
 # export LSCOLORS=ExFxBxDxCxegedabagacad # Color scheme for 'dark' terminal themes
 
 # Custom aliases
@@ -21,8 +21,6 @@ export LSCOLORS=GxFxCxDxBxegedabagaced # Color scheme for 'light' terminal theme
 #----------------------------------
 alias outthemis='ssh -p 2222 -i ~/.ssh/public_key -t rukmal@zeus.mullins.microbiol.washington.edu ssh themis'
 alias outthercules='ssh -p 2222 -i ~/.ssh/public_key -t rukmal@zeus.mullins.microbiol.washington.edu ssh hercules'
-alias inhercules='ssh rukmal@hercules'
-alias inthemis='ssh rukmal@themis'
 
 # System function aliases
 #------------------------
