@@ -56,6 +56,7 @@ endfunction
 filetype plugin on
 autocmd BufWritePre * call <SID>StripTrailingWhitespaces()
 
+:highlight Normal ctermfg=grey ctermbg=darkblue
 
 " Theme
 set t_co=256
