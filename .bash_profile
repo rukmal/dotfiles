@@ -1,6 +1,9 @@
 # Adding MacPorts to the path
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
+# Load git branch data from other script
+source ~/.git-prompt.sh
+
 # Read from .bashrc
 [ -r /Users/rukmal/.bashrc ] && source /Users/rukmal/.bashrc
 
@@ -60,9 +63,6 @@ gic () {
 	git add -A
 	git commit -m "$1"
 }
-
-# Load git branch data from other script
-source ~/.git-prompt.sh
 
 # Bash prompt options (comment the unused ones out)
 # PS1="$BLUE\W @ \h (\u)$CYAN`parse_git_branch` $BLUE\$ " # [dirname] @ [host] (user) (git branch) $
