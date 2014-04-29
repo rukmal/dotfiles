@@ -13,8 +13,8 @@ LIGHT_GRAY="\[\033[0;37m\]"
 CYAN="\[\033[0;36m\]"
 LIGHT_CYAN="\[\033[1;36m\]"
 NO_COLOUR="\[\033[0m\]"
-BLUE="\e[0;34m"
-RED="\e[1;31m"
+BLUE="\[\033[0;34m\]"
+RED="\[\033[1;31m\]"
 
 # Custom aliases
 #==============
