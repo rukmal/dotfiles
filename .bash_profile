@@ -1,6 +1,3 @@
-# Change bash prompt
-export PS1="\e[0;34m\W @ \h (\u) \$ "
-
 # Adding MacPorts to the path
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
@@ -10,9 +7,14 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Enabling colors in terminal
 #===========================
 export CLICOLOR=1
-# Color scheme for 'light' terminal themes
-# export LSCOLORS=GxFxCxDxBxegedabagaced # Color scheme for 'light' terminal themes
-# export LSCOLORS=ExFxBxDxCxegedabagacad # Color scheme for 'dark' terminal themes
+# Colors for the terminal
+GRAY="\[\033[1;30m\]"
+LIGHT_GRAY="\[\033[0;37m\]"
+CYAN="\[\033[0;36m\]"
+LIGHT_CYAN="\[\033[1;36m\]"
+NO_COLOUR="\[\033[0m\]"
+BLUE="\e[0;34m"
+RED="\e[1;31m"
 
 # Custom aliases
 #==============
@@ -58,3 +60,11 @@ gic () {
 	git add -A
 	git commit -m "$1"
 }
+
+# Load git branch data from other script
+source ~/.git-prompt.sh
+
+# Bash prompt options (comment the unused ones out)
+# PS1="$BLUE\W @ \h (\u)$CYAN`parse_git_branch` $BLUE\$ " # [dirname] @ [host] (user) (git branch) $
+PS1="$BLUE[\u@\h \W]$RED$(__git_ps1) $BLUE\$ "
+export PS1
