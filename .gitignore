@@ -2,6 +2,5 @@
 !.gitignore
 !.bash_profile
 !.bashrc
-!.vim
 !.vimrc
 !.git-prompt.sh
