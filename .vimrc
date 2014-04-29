@@ -56,7 +56,13 @@ endfunction
 filetype plugin on
 autocmd BufWritePre * call <SID>StripTrailingWhitespaces()
 
+" Setting the background color to dark blue
 :highlight Normal ctermfg=grey ctermbg=darkblue
+
+" Adding bracket auto complete
+:imap ( ()<left>
+:imap { {}<left>
+:imap [ []<left>
 
 " Theme
 set t_co=256
