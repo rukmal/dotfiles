@@ -31,6 +31,7 @@ alias la='ls -a'
 alias p='pwd'
 alias pc='pwd | pbcopy' # Copy current working directory to clipboard
 alias v='vim'
+alias sl='ls' # Just to reduce the amount of errors I get from this
 
 # System 'hack' aliases
 #----------------------
