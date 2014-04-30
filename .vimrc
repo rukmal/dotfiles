@@ -59,6 +59,12 @@ autocmd BufWritePre * call <SID>StripTrailingWhitespaces()
 " Setting the background color to dark blue
 :highlight Normal ctermfg=grey ctermbg=darkblue
 
+" Setting tab size
+:set tabstop=4
+
+" Substituting spaces for tabs when tab key is pressed
+:set expandtab
+
 " Adding bracket auto complete
 :imap ( ()<left>
 :imap { {}<left>
