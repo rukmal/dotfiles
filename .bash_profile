@@ -61,10 +61,12 @@ gic () {
 	git commit -m "$1"
 }
 
-# Load git branch data from other script
-source ~/.git-prompt.sh
+# Function to get the current git branch
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
 
 # Bash prompt options (comment the unused ones out)
 # PS1="$BLUE\W @ \h (\u)$CYAN`parse_git_branch` $BLUE\$ " # [dirname] @ [host] (user) (git branch) $
-PS1="$BLUE[\u@\h \W]$RED$(__git_ps1) $BLUE\$ "
+PS1="$BLUE[\u@\h \W]$RED\$(parse_git_branch) $BLUE\$ "
 export PS1
