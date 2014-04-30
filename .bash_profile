@@ -53,6 +53,22 @@ gip () {
 	git push origin $2;
 }
 
+# Function to create and checkout new branch
+# Note: Drops all current refs
+# Usage: gib [new branch name]
+gib () {
+    git branch $1
+    git checkout $1
+}
+
+# Function to delete an existing branch
+# Note: Switches current branch to master
+# Usage gibd [branch to be deleted]
+gibd () {
+    git checkout master
+    git branch -d $1
+}
+
 # Function for git add and commit
 # Note: Commits ALL files in working directory.
 # Usage: gic [commit message]
