@@ -19,11 +19,6 @@ RED="\e[1;31m"
 # Custom aliases
 #==============
 
-# Mullins lab (work related) aliases
-#----------------------------------
-alias outthemis='ssh -p 2222 -i ~/.ssh/public_key -t rukmal@zeus.mullins.microbiol.washington.edu ssh themis'
-alias outthercules='ssh -p 2222 -i ~/.ssh/public_key -t rukmal@zeus.mullins.microbiol.washington.edu ssh hercules'
-
 # System function aliases
 #------------------------
 alias ll='ls -l'
