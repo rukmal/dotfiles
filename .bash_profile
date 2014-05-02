@@ -8,14 +8,8 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 #===========================
 export CLICOLOR=1
 # Colors for the terminal
-GRAY="\[\033[1;30m\]"
-LIGHT_GRAY="\[\033[0;37m\]"
-CYAN="\[\033[0;36m\]"
-LIGHT_CYAN="\[\033[1;36m\]"
-NO_COLOUR="\[\033[0m\]"
-BLUE="\e[0;34m"
-RED="\e[1;31m"
-
+BLUE='\e[0;34m\]'
+RED='\e[1;31m\]'
 # Custom aliases
 #==============
 
@@ -28,9 +22,10 @@ alias pc='pwd | pbcopy' # Copy current working directory to clipboard
 alias v='vim'
 alias sl='ls' # Just to reduce the amount of errors I get from this
 
-# System 'hack' aliases
+# Miscellaneous aliases
 #----------------------
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
+alias serve='python -m SimpleHTTPServer'
 
 # Git aliases
 #------------
@@ -58,11 +53,11 @@ gib () {
 }
 
 # Function to delete an existing branch
-# Note: Switches current branch to master
+# Note: PERMANENTLY deletes the branch. (no prompt)
 # Usage gibd [branch to be deleted]
 gibd () {
     git checkout master
-    git branch -d $1
+    git branch -D $1
 }
 
 # Function for git add and commit
@@ -80,5 +75,5 @@ parse_git_branch() {
 
 # Bash prompt options (comment the unused ones out)
 # PS1="$BLUE\W @ \h (\u)$CYAN`parse_git_branch` $BLUE\$ " # [dirname] @ [host] (user) (git branch) $
-PS1="$BLUE[\u@\h \W]$RED\$(parse_git_branch) $BLUE\$ "
+PS1="\[$BLUE\][\u@\h \W]\[$RED\]\$(parse_git_branch) \[$BLUE\]\$ "
 export PS1
