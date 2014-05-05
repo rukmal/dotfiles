@@ -29,12 +29,13 @@ alias serve='python -m SimpleHTTPServer'
 
 # Git aliases
 #------------
-alias gif='git fetch'
-alias gis='git status'
-alias gid='git diff'
-alias gia='git add -A'
-alias gih='git push heroku master'
-alias gich='git checkout $1'
+alias gif='git fetch' # Fetch from a repo
+alias gis='git status' # Current status
+alias gid='git diff' # Show differences
+alias gia='git add -A' # Add all files to scope
+alias gih='git push heroku master' # Push to heroku
+alias gich='git checkout $1' # Change to branch X
+alias gib='git checkout -b $1' # Make and switch to branch X
 
 # Function for git add, commit and push
 # Note: Commits ALL files in working directory.
@@ -43,14 +44,6 @@ gip () {
 	git add -A
 	git commit -m "$1";
 	git push origin $2;
-}
-
-# Function to create and checkout new branch
-# Note: Drops all current refs
-# Usage: gib [new branch name]
-gib () {
-    git branch $1
-    git checkout $1
 }
 
 # Function to delete an existing branch
