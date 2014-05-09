@@ -1,0 +1,27 @@
+{
+  "name": "language-matlab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MATLAB/Octave language support for Atom",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JamesRitchie/language-matlab"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "# MATLAB/Octave language support for Atom\n\n[Converted](http://atom.io/docs/latest/converting-a-text-mate-bundle)\nfrom [matlab.tmbundle](https://github.com/textmate/matlab.tmbundle).\n\nContributions welcome.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/JamesRitchie/language-matlab/issues"
+  },
+  "homepage": "https://github.com/JamesRitchie/language-matlab",
+  "_id": "language-matlab@0.1.0",
+  "dist": {
+    "shasum": "a6dbad1d03960c3f1129e0246d67aff8c6609b34"
+  },
+  "_resolved": "/var/folders/td/trxtrfs96378hwpd5cm0h7540000gn/T/d-11431-7897-oortr5/package.tgz",
+  "_from": "/var/folders/td/trxtrfs96378hwpd5cm0h7540000gn/T/d-11431-7897-oortr5/package.tgz"
+}
