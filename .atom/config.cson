@@ -1,7 +1,7 @@
 'exception-reporting':
   'userId': '866562db-be3a-d764-1b7e-c2a9d6de4308'
 'release-notes':
-  'viewedVersion': '0.91.0'
+  'viewedVersion': '0.94.0'
 'welcome':
   'showOnStartup': false
 'metrics':
@@ -14,9 +14,12 @@
 'core':
   'themes': [
     'atom-dark-ui'
-    'atom-dark-syntax'
+    'solarized-dark-syntax'
   ]
   'projectHome': '/Users/rukmal/'
+  'disabledPackages': [
+    'docs-snippets'
+  ]
 'whitespace':
   'ensureSingleTrailingNewline': false
 'markdown-preview':
