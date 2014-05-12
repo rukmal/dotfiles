@@ -26,6 +26,7 @@ alias sl='ls' # Just to reduce the amount of errors I get from this
 #----------------------
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 alias serve='python -m SimpleHTTPServer'
+alias cfind='cat ~/.bash_history | grep $1' # Search for X in bash history
 
 # Git aliases
 #------------
