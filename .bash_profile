@@ -35,6 +35,7 @@ alias gis='git status' # Current status
 alias gia='git add -A' # Add all files to scope
 alias gih='git push heroku master' # Push to heroku
 alias gich='git checkout $1' # Change to branch X
+alias gid='git diff' # Show differences
 alias gib='git checkout -b $1' # Make and switch to branch X
 
 # Function for git add, commit and push
@@ -60,14 +61,6 @@ gibd () {
 gic () {
 	git add -A
 	git commit -m "$1"
-}
-
-# Function to detect git changes
-# Note: Adds all files to git scope
-# Usage gid
-gid () {
-    git add -A
-    git diff
 }
 
 # Function to get the current git branch
