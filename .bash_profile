@@ -28,6 +28,10 @@ alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 alias serve='python -m SimpleHTTPServer'
 alias cfind='cat ~/.bash_history | grep $1' # Search for X in bash history
 
+# Adding SSH keys
+#----------------
+ssh-add .ssh/mullinslab_rsa
+
 # Git aliases
 #------------
 alias gif='git fetch' # Fetch from a repo
