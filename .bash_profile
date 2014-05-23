@@ -30,7 +30,7 @@ alias cfind='cat ~/.bash_history | grep $1' # Search for X in bash history
 
 # Adding SSH keys
 #----------------
-ssh-add .ssh/mullinslab_rsa
+ssh-add .ssh/mullinslab_rsa &> /dev/null
 
 # Git aliases
 #------------
