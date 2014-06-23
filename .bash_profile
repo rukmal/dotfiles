@@ -15,7 +15,7 @@ RED="\[\033[1;31m\]"
 
 # System function aliases
 #------------------------
-alias ll='ls -l'
+alias ll='ls -hl'
 alias la='ls -a'
 alias p='pwd'
 alias pc='pwd | pbcopy' # Copy current working directory to clipboard
