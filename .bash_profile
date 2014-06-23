@@ -2,7 +2,7 @@
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 # Read from .bashrc
-[ -r /Users/rukmal/.bashrc ] && source /Users/rukmal/.bashrc
+# Add some kind of if statement that detects whether the bash_profile or the bashrc was read first. Depending on that, pick one to source from the other. If not, this leads to an infinite loop of sourcing bash configs.
 
 # Enabling colors in terminal
 #===========================
