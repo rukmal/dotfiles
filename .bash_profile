@@ -76,3 +76,9 @@ parse_git_branch() {
 # PS1="$BLUE\W @ \h (\u)$CYAN`parse_git_branch` $BLUE\$ " # [dirname] @ [host] (user) (git branch) $
 PS1="$BLUE[\u@\h \W]$RED\$(parse_git_branch) $BLUE\$ "
 export PS1
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/rukmal/Applications/google-cloud-sdk/path.bash.inc'
+
+# The next line enables bash completion for gcloud.
+source '/Users/rukmal/Applications/google-cloud-sdk/completion.bash.inc'
