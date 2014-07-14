@@ -22,6 +22,14 @@ alias pc='pwd | pbcopy' # Copy current working directory to clipboard
 alias v='vim'
 alias sl='ls' # Just to reduce the amount of errors I get from this
 
+# Fucntion to create and cd into a new directory
+# Note: Supports quote-enclosed multi-word filenames
+# Useage: cdm [new folder name]
+cdm () {
+    mkdir $1;
+    cd $1
+}
+
 # Miscellaneous aliases
 #----------------------
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
