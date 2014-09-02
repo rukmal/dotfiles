@@ -7,6 +7,9 @@ export PATH=/usr/local/apache-maven-3.2.3/bin:$PATH
 # Adding Play! framework activator to the path
 export PATH=/usr/local/activator/bin:$PATH
 
+# Adding Jaggery.js to the path
+export PATH=/usr/local/jaggery/bin:$PATH
+
 # Read from .bashrc
 # Add some kind of if statement that detects whether the bash_profile or the bashrc was read first. Depending on that, pick one to source from the other. If not, this leads to an infinite loop of sourcing bash configs.
 
