@@ -65,6 +65,13 @@ initvenv () {
 	fi
 }
 
+# Function to deactivate a python virtualenv and
+# save all of the installed packages to a requirements.txt file
+savevenv () {
+    pip freeze > requirements.txt
+    deactivate
+}
+
 # Git aliases
 #------------
 alias gif='git fetch' # Fetch from a repo
