@@ -65,10 +65,16 @@ initvenv () {
 	fi
 }
 
-# Function to deactivate a python virtualenv and
-# save all of the installed packages to a requirements.txt file
+# Function to save all of the installed packages
+# to a requirements.txt file
 savevenv () {
     pip freeze > requirements.txt
+}
+
+# Function to exit a python venv and save all
+# installed packages to a requirements.txt file
+quitvenv() {
+    savevenv
     deactivate
 }
 
