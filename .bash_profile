@@ -50,6 +50,21 @@ alias mit='license-generator install mit -n "Rukmal Weerawarana" -y 2014' # Inst
 #----------------
 ssh-add .ssh/mullinslab_rsa &> /dev/null
 
+# Programming stuff
+#------------------
+
+# Function to create a python virtual environment
+# This function also automaticall installs all required
+# dependencies if they are listed in a requirements.txt file
+initvenv () {
+	virtualenv venv
+	source venv/bin/activate
+	if [ -e requirements.txt ]
+	then
+		pip install -r requirements.txt
+	fi
+}
+
 # Git aliases
 #------------
 alias gif='git fetch' # Fetch from a repo
