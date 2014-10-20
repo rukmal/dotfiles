@@ -22,6 +22,10 @@ RED="\[\033[1;31m\]"
 # Custom aliases
 #==============
 
+# 3rd party app aliases
+#----------------------
+alias vtop='vtop --theme brew' # launch vtop with 'brew' theme
+
 # System function aliases
 #------------------------
 alias ll='ls -hl'
