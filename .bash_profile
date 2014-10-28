@@ -82,6 +82,11 @@ quitvenv() {
     deactivate
 }
 
+# Adding folder with Go code to GOPATH
+export GOPATH=/Users/rukmal/Projects/Gocode
+# Adding go executables to the path
+export PATH=/Users/rukmal/Projects/Gocode/bin:$PATH
+
 # Git aliases
 #------------
 alias gif='git fetch' # Fetch from a repo

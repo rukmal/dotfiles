@@ -641,7 +641,7 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame Preferences</key>
-	<string>179 352 924 485 0 0 1920 1177 </string>
+	<string>179 364 924 485 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>427 241 1130 701 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1466,6 +1466,8 @@
 	<integer>8</integer>
 	<key>RightOption</key>
 	<integer>3</integer>
+	<key>SUAutomaticallyUpdate</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
@@ -1473,7 +1475,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-10-23T21:35:54Z</date>
+	<date>2014-10-27T09:31:21Z</date>
+	<key>SUSkippedVersion</key>
+	<string>2.0.0.20141022</string>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
