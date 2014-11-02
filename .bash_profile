@@ -85,7 +85,7 @@ quitvenv() {
 # Adding folder with Go code to GOPATH
 export GOPATH=/Users/rukmal/Projects/Gocode
 # Adding go executables to the path
-export PATH=/Users/rukmal/Projects/Gocode/bin:$PATH
+export PATH=$GOPATH/bin:$PATH
 
 # Git aliases
 #------------

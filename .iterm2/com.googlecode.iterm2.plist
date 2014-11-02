@@ -643,7 +643,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>179 364 924 485 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>427 241 1130 701 0 0 1920 1177 </string>
+	<string>427 278 1130 701 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>424 702 570 401 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1475,7 +1475,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-10-27T09:31:21Z</date>
+	<date>2014-10-29T11:58:49Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.0.0.20141022</string>
 	<key>SavePasteHistory</key>
