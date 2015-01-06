@@ -48,7 +48,7 @@ cdm () {
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 alias serve='python -m SimpleHTTPServer'
 alias cfind='cat ~/.bash_history | grep $1' # Search for X in bash history
-alias mit='license-generator install mit -n "Rukmal Weerawarana" -y 2014' # Install the MIT license to the LICENSE file
+alias mit='license-generator install mit -n "Rukmal Weerawarana" -y $(date +%Y)' # Install the MIT license to the LICENSE file
 
 # Adding SSH keys
 #----------------
