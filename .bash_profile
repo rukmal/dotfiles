@@ -89,6 +89,7 @@ export PATH=$GOPATH/bin:$PATH
 
 # Git aliases
 #------------
+alias git=hub # Using GitHub's hub as an alias for git (http://github.com/github/hub)
 alias gif='git fetch' # Fetch from a repo
 alias gis='git status' # Current status
 alias gia='git add -A' # Add all files to scope
