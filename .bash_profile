@@ -1,3 +1,9 @@
+# Custom Env Variables
+#=====================
+
+# Creating M2_HOME var for maven
+export M2_HOME=/usr/local/apache-maven-3.2.3/
+
 # Adding MacPorts to the path
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 

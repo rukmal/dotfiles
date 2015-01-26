@@ -643,7 +643,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>535 305 924 485 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>636 476 1130 701 0 0 1920 1177 </string>
+	<string>487 355 1130 701 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>455 270 1130 701 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1475,7 +1475,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-01-05T08:40:37Z</date>
+	<date>2015-01-26T05:41:36Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.0.0.20141103</string>
 	<key>SavePasteHistory</key>
@@ -1505,6 +1505,7 @@
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Profiles</string>
+		<string>Jobs</string>
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
