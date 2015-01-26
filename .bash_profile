@@ -95,7 +95,6 @@ export PATH=$GOPATH/bin:$PATH
 
 # Git aliases
 #------------
-alias git=hub # Using GitHub's hub as an alias for git (http://github.com/github/hub)
 alias gif='git fetch' # Fetch from a repo
 alias gis='git status' # Current status
 alias gia='git add -A' # Add all files to scope
@@ -139,3 +138,11 @@ parse_git_branch() {
 PS1="$BLUE[\u@\h \W]$RED\$(parse_git_branch) $BLUE\$ "
 export PS1
 
+
+###############
+# starflt-cmd specific
+###############
+if [[ "$HOSTNAME" = "starflt-cmd" ]]
+then
+    alias git=hub # Using hub as an alias for git
+fi
