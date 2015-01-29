@@ -643,7 +643,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>535 305 924 485 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>487 355 1130 701 0 0 1920 1177 </string>
+	<string>359 322 1606 851 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>455 270 1130 701 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -987,6 +987,20 @@
 					<key>Text</key>
 					<string>0x7f</string>
 				</dict>
+				<key>0x44-0x120000</key>
+				<dict>
+					<key>Action</key>
+					<integer>28</integer>
+					<key>Text</key>
+					<string>E4B311B4-8DEB-4FB5-8990-FC51FFA73BC5</string>
+				</dict>
+				<key>0x64-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>29</integer>
+					<key>Text</key>
+					<string>E4B311B4-8DEB-4FB5-8990-FC51FFA73BC5</string>
+				</dict>
 				<key>0x9-0x40000</key>
 				<dict>
 					<key>Action</key>
@@ -1074,9 +1088,9 @@
 				<key>0xf702-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x44</string>
+					<string>b</string>
 				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
@@ -1102,9 +1116,9 @@
 				<key>0xf703-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x43</string>
+					<string>f</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -1475,7 +1489,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-01-26T05:41:36Z</date>
+	<date>2015-01-29T20:54:45Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.0.0.20141103</string>
 	<key>SavePasteHistory</key>

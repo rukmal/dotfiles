@@ -55,6 +55,7 @@ alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 alias serve='python -m SimpleHTTPServer'
 alias cfind='cat ~/.bash_history | grep $1' # Search for X in bash history
 alias mit='license-generator install mit -n "Rukmal Weerawarana" -y $(date +%Y)' # Install the MIT license to the LICENSE file
+alias vergil='ssh rukmal@vergil.u.washington.edu'
 
 # Adding SSH keys
 #----------------
@@ -145,4 +146,5 @@ export PS1
 if [[ "$HOSTNAME" = "starflt-cmd" ]]
 then
     alias git=hub # Using hub as an alias for git
+    export PATH=/Applications/Utilities/Qt/5.4/clang_64/bin:$PATH
 fi
