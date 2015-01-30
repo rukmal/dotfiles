@@ -164,7 +164,7 @@ then
     # Function to turn off and stop tunneling traffic through the Tor circuit
     tor-off () {
         sudo networksetup -setsocksfirewallproxystate Wi-Fi off
-        killall tor.real > /dev/null 2>&1
+        killall tor > /dev/null 2>&1
         if [ $? -eq 0 ] # If killall gave 0 as exit code, it was successful
         then
             echo "Tor Network tunneling stopped successfully"
