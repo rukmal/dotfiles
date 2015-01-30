@@ -147,4 +147,24 @@ if [[ "$HOSTNAME" = "starflt-cmd" ]]
 then
     alias git=hub # Using hub as an alias for git
     export PATH=/Applications/Utilities/Qt/5.4/clang_64/bin:$PATH
+
+    #######################
+    # starflt-cmd functions
+    #######################
+
+    # Function to connect to and tunnel all traffic through the Tor circuit
+    gotor () {
+        tor RunAsDaemon 1
+        sudo networksetup -setsocksfirewallproxy Wi-Fi localhost 9050
+        sudo networksetup -setsocksfirewallproxystate Wi-Fi on
+        echo "New Wi-Fi proxy settings:"
+        sudo networksetup -getsocksfirewallproxy Wi-Fi
+    }
+
+    # Function to turn off and stop tunneling traffic through the Tor circuit
+    toroff () {
+        sudo networksetup -setsocksfirewallproxystate Wi-Fi off
+        killall tor.real
+        echo "Tor Network tunneling stopped successfully"
+    }
 fi
