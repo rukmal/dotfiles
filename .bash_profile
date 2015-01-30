@@ -153,7 +153,7 @@ then
     #######################
 
     # Function to connect to and tunnel all traffic through the Tor circuit
-    gotor () {
+    tor-on () {
         tor RunAsDaemon 1
         sudo networksetup -setsocksfirewallproxy Wi-Fi localhost 9050
         sudo networksetup -setsocksfirewallproxystate Wi-Fi on
@@ -162,7 +162,7 @@ then
     }
 
     # Function to turn off and stop tunneling traffic through the Tor circuit
-    toroff () {
+    tor-off () {
         sudo networksetup -setsocksfirewallproxystate Wi-Fi off
         killall tor.real
         echo "Tor Network tunneling stopped successfully"
