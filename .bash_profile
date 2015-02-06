@@ -146,6 +146,8 @@ export PS1
 if [[ "$HOSTNAME" = "starflt-cmd" ]]
 then
     alias git=hub # Using hub as an alias for git
+    alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome" # Creating alias for google chrome
+    # Add qt clang to the path
     export PATH=/Applications/Utilities/Qt/5.4/clang_64/bin:$PATH
 
     #######################
