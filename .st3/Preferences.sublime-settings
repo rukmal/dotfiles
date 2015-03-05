@@ -1,0 +1,16 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"font_size": 12,
+	"ignored_packages":
+	[
+		"Theme - Flatland",
+		"Markdown",
+		"Theme - Cobalt2",
+		"Emmet",
+		"WordCount",
+		"BracketHighlighter",
+		"Markdown Preview",
+		"Vintage"
+	],
+	"theme": "Spacegray.sublime-theme"
+}
