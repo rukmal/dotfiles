@@ -4,6 +4,7 @@
 !.bashrc
 !.gitconfig
 !.gitignore
+!.scripts
 !.st3
 !.vimrc
-!.vim
+i!.vim
