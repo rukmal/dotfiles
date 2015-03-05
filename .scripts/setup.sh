@@ -18,7 +18,7 @@ cp ~/.iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/
 echo $'Done...\n'
 
 echo "Copying Sublime Text 3 Preferences to ~/Library/Application Support/Sublime Text 3/Packages/User/"
-cp ~/.st3/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+cp ~/.st3/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 echo $'Done...\n'
 
 echo "Operation completed successfully."
