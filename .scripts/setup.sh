@@ -8,7 +8,7 @@
 
 echo "Moving all dotfiles to the home directory..."
 mv ~/dotfiles/.* .. &> /dev/null
-rm -r ~/dotfiles/
+rm -fr ~/dotfiles/
 echo $'Done...\n'
 
 echo "Copying iTerm2 preferences to ~/Libaray/Preferences/"

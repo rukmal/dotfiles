@@ -24,5 +24,6 @@ then
         mkdir ~/.st3
     fi
     cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ~/.st3/
+    cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings ~/.st3/
     git add -f ~/.st3/*
 fi
