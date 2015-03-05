@@ -7,11 +7,13 @@
 #======================================================================
 
 echo "Moving all dotfiles to the home directory..."
-mv ~/dotfiles/.* .. &> /dev/null
-rm -r ~/dotfiles/
+shopt -s dotglob
+mv ~/dotfiles/* ~
+shopt -u dotglob
+rm -fr ~/dotfiles
 echo $'Done...\n'
 
-echo "Copying iTerm2 preferences to ~/Libaray/Preferences/"
+echo "Copying iTerm2 preferences to ~/Library/Preferences/"
 cp ~/.iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/
 echo $'Done...\n'
 
