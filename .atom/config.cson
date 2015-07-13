@@ -1,33 +1,15 @@
-'exception-reporting':
-  'userId': '866562db-be3a-d764-1b7e-c2a9d6de4308'
-'release-notes':
-  'viewedVersion': '0.94.0'
-'welcome':
-  'showOnStartup': false
-'metrics':
-  'userId': '09ce85bab1c5cc61ecbfc66090ccb5704d53608b'
-'editor':
-  'fontSize': 12
-  'softWrap': true
-  'preferredLineLength': 100
-  'tabLength': 4
-'core':
-  'themes': [
-    'atom-dark-ui'
-    'solarized-dark-syntax'
-  ]
-  'projectHome': '/Users/rukmal/'
-  'disabledPackages': [
-    'docs-snippets'
-  ]
-'whitespace':
-  'ensureSingleTrailingNewline': false
-'markdown-preview':
-  'grammars': [
-    'source.gfm'
-    'source.litcoffee'
-    'text.plain'
-    'text.plain.null-grammar'
-  ]
-'autocomplete':
-  'includeCompletionsFromAllBuffers': true
+"*":
+  "exception-reporting":
+    userId: "f437027c-3c78-cc3f-0db4-53895ea35305"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    invisibles: {}
+    fontSize: 12
+    tabLength: 4
+    softWrap: true

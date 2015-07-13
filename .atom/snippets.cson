@@ -13,8 +13,6 @@
 #     'prefix': 'log'
 #     'body': 'console.log $1'
 #
-
-'.source.js':
-  'Function comments':
-    'prefix': '/**'
-    'body': '/*\n * ${1:description}\n * @param  ${2:type} ${3:name} ${4:description}\n * @returns ${5:type} ${6:description}\n */$6'
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
