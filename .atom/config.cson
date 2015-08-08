@@ -13,3 +13,5 @@
     fontSize: 12
     tabLength: 4
     softWrap: true
+    softTabs: false
+    showInvisibles: true
