@@ -56,6 +56,7 @@ alias serve='python -m SimpleHTTPServer'
 alias cfind='cat ~/.bash_history | grep $1' # Search for X in bash history
 alias mit='license-generator install mit -n "Rukmal Weerawarana" -y $(date +%Y)' # Install the MIT license to the LICENSE file
 alias vergil='ssh rukmal@vergil.u.washington.edu'
+alias change-hostname='scutil --set HostName $1' # Change computer hostname (Note: sudo still required)
 
 # Adding SSH keys
 #----------------
@@ -147,6 +148,7 @@ if [[ "$HOSTNAME" = "starflt-cmd" ]]
 then
     alias git=hub # Using hub as an alias for git
     alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome" # Creating alias for google chrome
+    alias mathematica="/Applications/Mathematica.app/Contents/MacOS/WolframKernel" # Creating alias for Mathematica
     # Add qt clang to the path
     export PATH=/Applications/Utilities/Qt/5.4/clang_64/bin:$PATH
 
