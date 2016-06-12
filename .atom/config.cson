@@ -1,17 +1,21 @@
 "*":
-  "exception-reporting":
-    userId: "f437027c-3c78-cc3f-0db4-53895ea35305"
-  welcome:
-    showOnStartup: false
   core:
+    disabledPackages: [
+      "wrap-guide"
+    ]
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
     ]
   editor:
+    fontSize: 11
     invisibles: {}
-    fontSize: 12
-    tabLength: 4
-    softWrap: true
-    softTabs: false
     showInvisibles: true
+    softTabs: false
+    softWrap: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "f437027c-3c78-cc3f-0db4-53895ea35305"
+  latex: {}
+  welcome:
+    showOnStartup: false
