@@ -2,10 +2,12 @@
   core:
     disabledPackages: [
       "wrap-guide"
+      "language-gfm"
+      "term"
     ]
     themes: [
-      "one-dark-ui"
-      "solarized-dark-syntax"
+      "seti-ui"
+      "seti-syntax"
     ]
   editor:
     fontSize: 11
@@ -17,5 +19,14 @@
   "exception-reporting":
     userId: "f437027c-3c78-cc3f-0db4-53895ea35305"
   latex: {}
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
   welcome:
     showOnStartup: false
+".md.text":
+  editor:
+    tabLength: 4

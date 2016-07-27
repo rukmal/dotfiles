@@ -3,15 +3,17 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 Plugin 'gmarik/vundle'
 Plugin 'jonathanfilip/vim-lucius'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/Align'
+Plugin 'vim-pandoc/vim-rmarkdown'
 
+call vundle#end()
 filetype plugin indent on
 
 
