@@ -1,32 +1,140 @@
 "*":
+  Hydrogen:
+    autocomplete: false
+    languageMappings: "{\"r\": \"R\", \"markdown\": \"R\"}"
+  MarkdownDocument:
+    enableAutoSave: "true"
+    markdownScopes: [
+      "source.gfm"
+      "text.md"
+      "text.plain"
+      "text.plain.null-grammar"
+    ]
+  "atom-clock":
+    dateFormat: " MMM D | ddd | hh:mm:ss a"
+    refreshInterval: 1
+  "atom-material-ui":
+    colors:
+      accentColor: "#af0010"
+      genAccent: true
+      paintCursor: true
+    fonts:
+      fontSize: 15
+    tabs:
+      compactTabs: true
+      tintedTabBar: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      panelContrast: true
+  "autocomplete-plus":
+    autoActivationDelay: 150
+    backspaceTriggersAutocomplete: true
+    defaultProvider: "Fuzzy"
+    includeCompletionsFromAllBuffers: false
+    maxVisibleSuggestions: 5
+    strictMatching: true
+    useLocalityBonus: false
+  "block-cursor":
+    global:
+      blinkOn:
+        backgroundColor: "#8c8b8c"
+  build:
+    statusBar: "Disable"
+  "build-make": {}
   core:
+    destroyEmptyPanes: false
     disabledPackages: [
       "wrap-guide"
       "language-gfm"
       "term"
+      "block-cursor"
+      "ink"
+      "jupyter-notebook"
     ]
+    telemetryConsent: "no"
     themes: [
-      "seti-ui"
-      "seti-syntax"
+      "atom-material-ui"
+      "atom-material-syntax"
     ]
+    titleBar: "custom"
   editor:
-    fontSize: 11
+    backUpBeforeSaving: true
+    fontSize: 12
     invisibles: {}
+    preferredLineLength: 110
+    showIndentGuide: true
     showInvisibles: true
     softTabs: false
     softWrap: true
+    softWrapAtPreferredLineLength: true
     tabLength: 4
   "exception-reporting":
     userId: "f437027c-3c78-cc3f-0db4-53895ea35305"
+  "file-icons":
+    forceShow: true
+  finance: {}
   latex: {}
+  "latex-completions":
+    selector: ".source, .text, .tex"
+  linter: {}
+  "linter-lintr":
+    linters: "c(assignment_linter, closed_curly_linter, commas_linter, spaces_left_parentheses_linter)"
+  minimap:
+    plugins:
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+    scrollAnimation: true
+  "one-dark-ui": {}
+  "pdf-view":
+    reverseSyncBehaviour: "Double click"
+  pigments:
+    extendedFiletypesForColorWords: [
+      ".R"
+    ]
+  "seti-syntax": {}
+  "seti-ui":
+    compactView: true
+    fileIcons: false
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "text.md"
+    ]
   "split-diff":
     diffWords: true
     ignoreWhitespace: true
     leftEditorColor: "red"
     rightEditorColor: "green"
+    scrollSyncType: "Vertical + Horizontal"
     syncHorizontalScroll: true
+  "tool-bar":
+    position: "Left"
+    visible: false
   welcome:
     showOnStartup: false
+".breakpoints.hydrogen":
+  editor:
+    preferredLineLength: 1
+    tabLength: 4
+".knitr.latex.tex.text":
+  editor:
+    tabLength: 4
+".latex.rd.tex.text":
+  editor:
+    tabLength: 4
 ".md.text":
+  editor:
+    tabLength: 4
+".r.source":
   editor:
     tabLength: 4

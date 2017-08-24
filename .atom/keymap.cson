@@ -23,3 +23,9 @@
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
+
+'atom-text-editor':
+    'cmd-ctrl-]': 'window:focus-pane-on-right'
+    'cmd-ctrl-[': 'window:focus-pane-on-left'
+    # 'cmd-ctrl-up': 'window:focus-pane-on-above' [conflicts with move line up/down]
+    # 'cmd-ctrl-down': 'window:focus-pane-on-below' [conflicts with move line up/down]

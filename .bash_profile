@@ -1,14 +1,13 @@
+# Check if .bash_rc is loaded, if not load it
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi
+
 # Custom Env Variables
 #=====================
 
-# Creating M2_HOME var for maven
-export M2_HOME=/usr/local/apache-maven-3.2.3/
-
 # Adding MacPorts to the path
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
-# Adding maven to the path
-export PATH=/usr/local/apache-maven-3.2.3/bin:$PATH
 
 # Adding Play! framework activator to the path
 export PATH=/usr/local/activator/bin:$PATH
@@ -16,15 +15,6 @@ export PATH=/usr/local/activator/bin:$PATH
 # Adding Jaggery.js to the path
 export PATH=/usr/local/jaggery/bin:$PATH
 
-# Read from .bashrc
-# Add some kind of if statement that detects whether the bash_profile or the bashrc was read first. Depending on that, pick one to source from the other. If not, this leads to an infinite loop of sourcing bash configs.
-
-# Enabling colors in terminal
-#===========================
-export CLICOLOR=1
-# Colors for the terminal
-BLUE="\[\033[0;34m\]"
-RED="\[\033[1;31m\]"
 # Custom aliases
 #==============
 
@@ -57,10 +47,6 @@ alias cfind='cat ~/.bash_history | grep $1' # Search for X in bash history
 alias mit='license-generator install mit -n "Rukmal Weerawarana" -y $(date +%Y)' # Install the MIT license to the LICENSE file
 alias vergil='ssh rukmal@vergil.u.washington.edu'
 alias change-hostname='scutil --set HostName $1' # Change computer hostname (Note: sudo still required)
-
-# Adding SSH keys
-#----------------
-ssh-add .ssh/mullinslab_rsa &> /dev/null
 
 # Programming stuff
 #------------------
@@ -135,22 +121,21 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-# Bash prompt options (comment the unused ones out)
-# PS1="$BLUE\W @ \h (\u)$CYAN`parse_git_branch` $BLUE\$ " # [dirname] @ [host] (user) (git branch) $
-PS1="$BLUE[\u@\h \W]$RED\$(parse_git_branch) $BLUE\$ "
-export PS1
-
-
 ###############
 # starflt-cmd specific
 ###############
-if [[ "$HOSTNAME" = "starflt-cmd" ]]
+if [[ "$HOSTNAME" = "macbook" ]]
 then
     alias git=hub # Using hub as an alias for git
     alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome" # Creating alias for google chrome
+    alias htop="sudo htop" # Sudo priviledges to monitor all tasks
     alias mathematica="/Applications/Mathematica.app/Contents/MacOS/WolframKernel" # Creating alias for Mathematica
+    alias sca="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine" # Shortcut to start screensaver
+
     # Add qt clang to the path
     export PATH=/Applications/Utilities/Qt/5.4/clang_64/bin:$PATH
+    # Add NVIDIA CUDA toolkit
+    export PATH=/Developer/NVIDIA/CUDA-8.0/bin:$PATH
 
     #######################
     # starflt-cmd functions
@@ -177,3 +162,26 @@ then
         fi
     }
 fi
+
+# Anaconda (conda)
+export PATH="/Applications/anaconda/bin:$PATH"
+
+# pkg-config path
+export PKG_CONFIG_PATH=/usr/local/Cellar/zeromq/4.0.5_2/lib/pkgconfig:$PKG_CONFIG_PATH
+alias python=python2.7
+alias py=python3.5
+
+# added by Anaconda3 4.1.1 installer
+export PATH="/Users/rukmal/Applications/anaconda/bin:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# Sourcing pure theme
+source /Users/rukmal/.iterm2/prompts/pure_prompt.bash
+
+# Set CLICOLOR if you want Ansi Colors in iTerm2
+export CLICOLOR=1
+
+# Set colors to match iTerm2 Terminal Colors
+export TERM=xterm
+eval $(/usr/libexec/path_helper -s)
