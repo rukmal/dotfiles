@@ -126,7 +126,6 @@ parse_git_branch() {
 ###############
 if [[ "$HOSTNAME" = "macbook" ]]
 then
-    alias git=hub # Using hub as an alias for git
     alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome" # Creating alias for google chrome
     alias htop="sudo htop" # Sudo priviledges to monitor all tasks
     alias mathematica="/Applications/Mathematica.app/Contents/MacOS/WolframKernel" # Creating alias for Mathematica
