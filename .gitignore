@@ -1,0 +1,14 @@
+# Exclude all files by default
+*
+
+# gitignore (duh)
+!.gitignore
+
+# Git Configuration file
+!.gitconfig
+
+# Terminal Stuff
+!.terminal
+
+# Zsh config
+!.zshrc
