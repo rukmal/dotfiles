@@ -16,6 +16,9 @@ POWERLEVEL9K_HOME_SUB_ICON='📂'
 POWERLEVEL9K_FOLDER_ICON='🖥'
 POWERLEVEL9K_ETC_ICON='⚙️'
 
+# Setting template for printing hostname
+POWERLEVEL9K_CONTEXT_TEMPLATE="%n@`hostname -s`"
+
 # Define left side stuff
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 
