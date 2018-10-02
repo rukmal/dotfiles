@@ -1,6 +1,8 @@
 # ZSH Prompt Definition/Customization
 # This was created using the guide here: https://github.com/bhilburn/powerlevel9k#prompt-customization
 
+# NOTE: If this is slow, try cleaning log files (*.asl) here: /private/var/log/asl/
+
 # Defining to not show 'context' if this is the user
 # DEFAULT_USER=rukmal
 
