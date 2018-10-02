@@ -19,8 +19,11 @@ POWERLEVEL9K_ETC_ICON='⚙️'
 # Setting template for printing hostname
 POWERLEVEL9K_CONTEXT_TEMPLATE="%n@`hostname -s`"
 
+# More efficient way of getting Anaconda environment
+POWERLEVEL9K_CUSTOM_ANACONDA_ENV='echo "$CONDA_DEFAULT_ENV"'
+
 # Define left side stuff
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 
 # Define right side stuff
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(anaconda time context)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(custom_anaconda_env time context)
