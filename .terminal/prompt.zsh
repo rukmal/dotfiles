@@ -18,6 +18,13 @@ POWERLEVEL9K_HOME_SUB_ICON='📂'
 POWERLEVEL9K_FOLDER_ICON='🖥'
 POWERLEVEL9K_ETC_ICON='⚙️'
 
+# Git stuff - function to get current git branch
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+POWERLEVEL9K_CUSTOM_PARSE_GIT_BRANCH_BACKGROUND='green'
+POWERLEVEL9K_CUSTOM_PARSE_GIT_BRANCH='parse_git_branch'
+
 # Setting template for printing hostname
 POWERLEVEL9K_CONTEXT_TEMPLATE="%n@`hostname -s`"
 
@@ -25,7 +32,7 @@ POWERLEVEL9K_CONTEXT_TEMPLATE="%n@`hostname -s`"
 POWERLEVEL9K_CUSTOM_ANACONDA_ENV='echo "$CONDA_DEFAULT_ENV"'
 
 # Define left side stuff
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir custom_parse_git_branch)
 
 # Define right side stuff
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(custom_anaconda_env time context)
