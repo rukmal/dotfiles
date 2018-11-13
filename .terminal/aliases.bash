@@ -1,5 +1,5 @@
 # Convenience
-#=================
+#============
 
 alias ll='ls -hl'
 alias la='ls -a'
@@ -7,6 +7,18 @@ alias v='vim'
 alias sl='ls' # Just to reduce the amount of errors I get from this
 
 alias htop='sudo htop' # 'sudo' for complete process visibility
+
+
+# Networking
+#===========
+
+alias wifi-off='sudo ifconfig en0 off'
+alias wifi-on='sudo ifconfig en0 on'
+
+restart-wifi () {
+	sudo ifconfig en0 down
+	sudo ifconfig en0 up
+}
 
 # Git
 #====
