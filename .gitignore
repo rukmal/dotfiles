@@ -8,7 +8,7 @@
 !.gitconfig
 
 # Terminal Stuff
-!.terminal/*
+!.terminal/{*.bash,*.zsh}
 
 # Zsh config
 !.zshrc
