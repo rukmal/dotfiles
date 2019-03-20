@@ -4,9 +4,11 @@
 # Notes
 #--------
 # 1. If you see an error, 'complete:13: command not found: compdef' on startup, see: https://unix.stackexchange.com/questions/339954/zsh-command-not-found-compinstall-compinit-compdef
+# 2. If autocompletions are behaving weird, see: https://github.com/bhilburn/powerlevel9k/wiki/Troubleshooting#deletion-of-characters-when-tab-completing
 
 # Path to oh-my-zsh installation.
 export ZSH="/Users/rukmal/.oh-my-zsh"
+
 
 # Antigen is currently being used for plugin management
 # This can be installed on *nix with a package manager
@@ -27,3 +29,6 @@ antigen theme bhilburn/powerlevel9k powerlevel9k
 
 # Source .bash and .zsh files in .terminal directory
 for f in ~/.terminal/{*.bash,*.zsh}; do source $f; done
+
+# Apply antigen settings
+antigen apply
