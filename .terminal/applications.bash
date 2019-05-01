@@ -5,6 +5,9 @@ export PATH="/Users/rukmal/Applications/anaconda3/bin:$PATH"  # Command line uti
 
 . /Users/rukmal/Applications/anaconda3/etc/profile.d/conda.sh  # Enabling 'conda activate'
 
+# Ruby
+#=====
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 # Kubernetes
 #============
