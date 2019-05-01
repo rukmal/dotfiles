@@ -7,7 +7,9 @@ export PATH="/Users/rukmal/Applications/anaconda3/bin:$PATH"  # Command line uti
 
 # Ruby
 #=====
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+export PATH="/usr/local/opt/ruby/bin:$PATH"  # Ruby command line
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"  # Executable ruby gems
 
 # Kubernetes
 #============
