@@ -37,7 +37,11 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir custom_parse_git_branch)
 # Define right side stuff
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(custom_anaconda_env time context)
 
-# Changing colors for sudo
+# Color Modifications
+
+# Set background and foreground colors for root
 POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND="red"
 POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND="black"
+
+# Set background color for remote login
 POWERLEVEL9K_CONTEXT_REMOTE_BACKGROUND="purple"
