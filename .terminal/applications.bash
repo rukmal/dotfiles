@@ -17,3 +17,12 @@ export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"  # Executable ruby gems
 if [ $commands[kubectl] ]; then
     source <(kubectl completion zsh);
 fi
+
+# Homebrew
+#=========
+
+# Check that we are running macos
+if sw_vers > /dev/null 2>&1;
+then
+    export PATH="/usr/local/sbin:$PATH"
+fi
