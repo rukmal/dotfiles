@@ -1,9 +1,9 @@
 # Anaconda 3
 #============
 
-export PATH="/Users/rukmalw/Applications/anaconda3/bin:$PATH"  # Command line utility
+export PATH="/Users/$(whoami)/Applications/anaconda3/bin:$PATH"  # Command line utility
 
-. /Users/rukmalw/Applications/anaconda3/etc/profile.d/conda.sh  # Enabling 'conda activate'
+. /Users/$(whoami)/Applications/anaconda3/etc/profile.d/conda.sh  # Enabling 'conda activate'
 
 # Ruby
 #=====
