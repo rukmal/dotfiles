@@ -103,9 +103,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>-1578 499 796 486 -1920 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>960 0 955 1200 0 0 1920 1200 </string>
+	<string>0 0 1914 2160 0 0 3840 2160 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 955 1200 0 0 1920 1200 </string>
+	<string>1920 1617 850 543 0 0 3840 2160 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>0 645 850 543 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -1880,13 +1880,13 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.3.2</string>
+		<string>3.3.0</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.7</string>
 		<string>3.3.9</string>
 		<string>3.2.9</string>
-		<string>3.3.0</string>
+		<string>3.3.2</string>
 		<string>3.3.4</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
@@ -1894,9 +1894,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1920, 1200}}</string>
+		<string>{{0, 0}, {3840, 2160}}</string>
 		<key>topLeft</key>
-		<string>{638, 952}</string>
+		<string>{1598, 1186}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -1905,7 +1905,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1CE307F1-0B68-4FCB-AF29-8EBD35C72AF1</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>35</integer>
+	<integer>45</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2632,6 +2632,8 @@
 	</dict>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>560066050.69839203</real>
+	<key>NoSyncTurnOffBracketedPasteOnHostChange</key>
+	<false/>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
@@ -2688,7 +2690,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-03-29T21:00:04Z</date>
+	<date>2020-04-08T04:39:19Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2699,6 +2701,8 @@
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.10000000000000001</real>
 	<key>StatusBarPosition</key>
 	<integer>1</integer>
 	<key>TabStyleWithAutomaticOption</key>
