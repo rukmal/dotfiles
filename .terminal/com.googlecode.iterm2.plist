@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>ApplePressAndHoldEnabled</key>
@@ -103,11 +105,11 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>-1578 499 796 486 -1920 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1914 2160 0 0 3840 2160 </string>
+	<string>0 1089 1914 1071 0 0 3840 2160 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1920 1617 850 543 0 0 3840 2160 </string>
+	<string>0 0 1914 2160 0 0 3840 2160 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 645 850 543 0 0 1920 1200 </string>
+	<string>1920 0 1914 2160 0 0 3840 2160 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>-960 573 850 507 -1920 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -734,7 +736,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>100000</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1880,14 +1882,14 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.3.0</string>
+		<string>3.3.4</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.7</string>
 		<string>3.3.9</string>
 		<string>3.2.9</string>
 		<string>3.3.2</string>
-		<string>3.3.4</string>
+		<string>3.3.0</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -1905,7 +1907,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1CE307F1-0B68-4FCB-AF29-8EBD35C72AF1</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>45</integer>
+	<integer>52</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2690,7 +2692,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-08T04:39:19Z</date>
+	<date>2020-05-21T03:00:20Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
