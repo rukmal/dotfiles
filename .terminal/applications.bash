@@ -24,5 +24,9 @@ fi
 # Check that we are running macos
 if sw_vers > /dev/null 2>&1;
 then
-    export PATH="/usr/local/sbin:$PATH"
+    # Check if homebrew is installed on Intel/Apple Silicon MacOS as determined by install path
+    # If Intel, homebrew installs in /usr/local/Homebrew
+    [ -d "/usr/local/Homebrew" ] &&  export PATH="/usr/local/sbin:$PATH"
+    # If Apple Silicon, homebrew installs in /opt/homebrew
+    [ -d "/opt/homebrew" ] && export PATH="/opt/homebrew/bin:$PATH"
 fi

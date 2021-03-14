@@ -9,7 +9,7 @@
 #    Note that this solution didn't actually work for me; I just had to disable some of the autocompletions. See: https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-2-install-for-oh-my-zsh
 
 # Path to oh-my-zsh installation.
-export ZSH="/Users/rukmalw/.oh-my-zsh"
+export ZSH="/Users/rukmal/.oh-my-zsh"
 
 
 # Autocompletion setup
@@ -21,7 +21,7 @@ SAVEHIST=1000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/Users/rukmalw/.zshrc'
+zstyle :compinstall filename '/Users/rukmal/.zshrc'
 
 autoload -Uz compinit
 compinit
