@@ -9,7 +9,7 @@ export PATH="/Users/$(whoami)/Applications/anaconda3/bin:$PATH"  # Command line 
 #=====
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"  # Ruby command line
-export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"  # Executable ruby gems
+export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"  # Executable ruby gems
 
 # Kubernetes
 #============
