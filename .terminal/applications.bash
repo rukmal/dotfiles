@@ -34,3 +34,10 @@ then
     # If Apple Silicon, homebrew installs in /opt/homebrew
     [ -d "/opt/homebrew" ] && export PATH="/opt/homebrew/bin:$PATH"
 fi
+
+
+# Utilities
+#==========
+
+# htop
+alias htop="sudo htop"
