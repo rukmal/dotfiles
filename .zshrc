@@ -11,9 +11,6 @@
 # Path to oh-my-zsh installation.
 export ZSH="/Users/rukmal/.oh-my-zsh"
 
-
-# Autocompletion setup
-
 # >>>>>>>>>Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -38,6 +35,9 @@ source /usr/local/share/antigen/antigen.zsh
 
 # Setting antigen to use the oh-my-zsh library
 antigen use oh-my-zsh
+
+# Autocompletion Plugins
+antigen bundle esc/conda-zsh-completion
 
 # Setting up the theme
 # See: https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-4-install-for-antigen
