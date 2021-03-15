@@ -37,7 +37,8 @@ source /usr/local/share/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 # Autocompletion Plugins
-antigen bundle esc/conda-zsh-completion
+antigen bundle esc/conda-zsh-completion  # Anaconda autocompletion
+antigen bundle zpm-zsh/ssh  # SSH hosts autocompletion
 
 # Setting up the theme
 # See: https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-4-install-for-antigen
