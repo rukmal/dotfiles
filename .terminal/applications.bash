@@ -1,13 +1,16 @@
 # Anaconda 3
 #============
 
-# Adding (1) command line utility and (2) enabling conda activate if installed with CLI
-[ -d /Users/$(whoami)/Applications/anaconda3/bin ] \
+# Adding Anaconda if installed for Intel
+[ -d "/Users/$(whoami)/Applications/anaconda3/bin" ] \
     && export PATH="/Users/$(whoami)/Applications/anaconda3/bin:$PATH" \
-    && . /Users/$(whoami)/Applications/anaconda3/etc/profile.d/conda.sh
-# Adding loading script if installed with GUI
-[ -d /Users/$(whoami)/Applications/anaconda3 ] \
-    && sh /Users/$(whoami)/Applications/anaconda3/anaconda3.sh
+    && . "/Users/$(whoami)/Applications/anaconda3/etc/profile.d/conda.sh"
+# Adding loading script if installed for Apple Silicon
+if [ -d "/Users/$(whoami)/opt/anaconda3/etc/profile.d" ]; then
+    . "/Users/$(whoami)/opt/anaconda3/etc/profile.d/conda.sh"
+else
+    [ -d "/Users/$(whoami)/opt/anaconda3/bin" ] && export PATH="/Users/$(whoami)/opt/anaconda3/bin:$PATH"
+fi
 
 # Ruby
 #=====
