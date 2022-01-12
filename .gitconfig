@@ -1,3 +1,5 @@
 [user]
 	name = Rukmal Weerawarana
 	email = rukmal.weerawarana@gmail.com
+[init]
+	defaultBranch = main

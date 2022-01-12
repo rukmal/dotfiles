@@ -39,6 +39,8 @@ antigen use oh-my-zsh
 # Autocompletion Plugins
 antigen bundle esc/conda-zsh-completion  # Anaconda autocompletion
 antigen bundle zpm-zsh/ssh  # SSH hosts autocompletion
+antigen bundle aws  # AWS things
+SHOW_AWS_PROMPT=false
 
 # Setting up the theme
 # See: https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-4-install-for-antigen
@@ -51,3 +53,5 @@ for f in ~/.terminal/{*.bash,*.zsh}; do source $f; done
 
 # Apply antigen settings
 antigen apply
+
+# NOTE: Figure out why you are using antigen
