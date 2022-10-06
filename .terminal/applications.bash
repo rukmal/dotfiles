@@ -18,12 +18,12 @@ fi
 export PATH="/usr/local/opt/ruby/bin:$PATH"  # Ruby command line
 export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"  # Executable ruby gems
 
-# Kubernetes
-#============
+# # Kubernetes
+# #============
 
-if [ $commands[kubectl] ]; then
-    source <(kubectl completion zsh);
-fi
+# if [ $commands[kubectl] ]; then
+#     source <(kubectl completion zsh);
+# fi
 
 # Homebrew
 #=========
@@ -37,6 +37,11 @@ then
     # If Apple Silicon, homebrew installs in /opt/homebrew
     [ -d "/opt/homebrew" ] && export PATH="/opt/homebrew/bin:$PATH"
 fi
+
+# OpenBB
+#=======
+
+alias openbb="/Applications/OpenBB\ Terminal/OpenBB\ Terminal"
 
 
 # Utilities
