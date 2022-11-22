@@ -1,14 +1,12 @@
 format = """
 $username@$hostname $directory\
-$fill\
 $git_branch\
 $git_state\
 $git_status\
 $git_metrics\
 $python\
 $conda\
-$cmd_duration\
-$line_break\
+$linebreak
 """
 
 [fill]
@@ -30,16 +28,20 @@ truncate_to_repo = false
 truncation_length = 4
 
 [conda]
-format = "using [$symbol$environment]($style) "
+format = "via [$symbol$environment]($style) "
 
-# [character]
-# error_symbol = "[❯](red)"
-# success_symbol = "[❯](purple)"
-# vicmd_symbol = "[❮](green)"
+[python]
+format = 'with [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[character]
+error_symbol = "[❯](red)"
+success_symbol = "[❯](purple)"
+vicmd_symbol = "[❮](green)"
 
 [git_branch]
-format = "[$symbol$branch]($style) "
-style = "bright-black"
+format = " on [$symbol$branch]($style) "
+ignore_branches = ["master", "main"]
+style = "bright-green"
 symbol = " "
 
 [jobs]
@@ -49,11 +51,11 @@ style = "bold red"
 symbol = ""
 
 [git_status]
-format = '([\[$all_status$ahead_behind\]]($style) )'
+format = '([\[$all_status$ahead_behind\]]($style))'
 style = "cyan"
 
 [git_state]
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
+format = '\([$state($progress_current/$progress_total)]($style)\)'
 style = "bright-black"
 
 [git_metrics]
