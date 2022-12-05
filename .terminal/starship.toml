@@ -9,6 +9,8 @@ $conda\
 $linebreak
 """
 
+command_timeout = 36000000000
+
 [fill]
 symbol = " "
 
