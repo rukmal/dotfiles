@@ -40,8 +40,21 @@ fi
 
 # OpenBB
 #=======
-
 alias openbb="/Applications/OpenBB\ Terminal/OpenBB\ Terminal"
+
+
+# Compdef
+#========
+autoload -Uz compinit
+compinit
+
+
+# 1Password
+#===========
+# Autocompletions
+eval "$(op completion zsh)"; compdef _op op
+# Aliases to access common items
+alias op-openai-key="op item get OpenAI --fields=\"API Secret Key\""
 
 
 # Utilities
