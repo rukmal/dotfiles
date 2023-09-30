@@ -35,7 +35,7 @@ then
     # If Intel, homebrew installs in /usr/local/Homebrew
     [ -d "/usr/local/Homebrew" ] &&  export PATH="/usr/local/sbin:$PATH"
     # If Apple Silicon, homebrew installs in /opt/homebrew
-    [ -d "/opt/homebrew" ] && export PATH="/opt/homebrew/bin:$PATH"
+    [ -d "/opt/homebrew" ] && export PATH="/opt/homebrew/sbin:$PATH"
 fi
 
 # OpenBB
