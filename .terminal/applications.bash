@@ -33,9 +33,9 @@ if sw_vers > /dev/null 2>&1;
 then
     # Check if homebrew is installed on Intel/Apple Silicon MacOS as determined by install path
     # If Intel, homebrew installs in /usr/local/Homebrew
-    [ -d "/usr/local/Homebrew" ] &&  export PATH="/usr/local/sbin:$PATH"
+    [ -d "/usr/local/Homebrew" ] &&  export PATH="/usr/local/bin:$PATH"
     # If Apple Silicon, homebrew installs in /opt/homebrew
-    [ -d "/opt/homebrew" ] && export PATH="/opt/homebrew/sbin:$PATH"
+    [ -d "/opt/homebrew" ] && export PATH="/opt/homebrew/bin:$PATH"
 fi
 
 # OpenBB
@@ -51,11 +51,15 @@ compinit
 
 # 1Password
 #===========
-# Autocompletions
-eval "$(op completion zsh)"; compdef _op op
-# Aliases to access common items
-alias op-openai-key="op item get OpenAI --fields=\"API Secret Key\""
 
+# Only run these if the op command is installed
+if command -v op &> /dev/null
+then
+    # Autocompletions
+    eval "$(op completion zsh)"; compdef _op op
+    # Aliases to access common items
+    alias op-openai-key="op item get OpenAI --fields=\"API Secret Key\""
+fi
 
 # Utilities
 #==========
