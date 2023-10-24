@@ -3,7 +3,7 @@
 
 alias ll='ls -hl'
 alias la='ls -a'
-alias v='vim'
+alias v='nvim'
 alias sl='ls' # Just to reduce the amount of errors I get from this
 
 alias htop='sudo htop' # 'sudo' for complete process visibility
