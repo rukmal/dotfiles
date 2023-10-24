@@ -5,3 +5,4 @@
 for f in ~/.terminal/*.bash; do source $f; done
 
 eval "$(starship init zsh)"
+

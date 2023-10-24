@@ -4,11 +4,13 @@ $git_branch\
 $git_state\
 $git_status\
 $git_metrics\
-$python\
-$conda\
 $linebreak
 """
-
+right_format="""
+(took $cmd_duration) \
+$python\
+$conda\
+"""
 command_timeout = 36000000000
 
 [fill]
@@ -33,7 +35,10 @@ truncation_length = 4
 format = "via [$symbol$environment]($style) "
 
 [python]
-format = 'with [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[custom.last_arg]
+command = "history | tail -1 | awk '{print $2}'"
 
 [character]
 error_symbol = "[❯](red)"
@@ -70,6 +75,6 @@ style = "yellow"
 [time]
 disabled = false
 format = "[$time]($style) "
-style = "bold white"
+style = "light white"
 time_format = "%I:%M %p"
 use_12hr = true
