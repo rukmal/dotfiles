@@ -47,7 +47,7 @@ vicmd_symbol = "[❮](green)"
 
 [git_branch]
 format = "on [$symbol$branch]($style) "
-ignore_branches = ["master", "main"]
+#ignore_branches = ["master", "main"]
 style = "bright-green"
 symbol = " "
 
